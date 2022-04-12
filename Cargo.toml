@@ -2,6 +2,12 @@
 name = "rep"
 version = "0.1.0"
 edition = "2021"
+authors = ["Ahmad Rosid <alahmadrosid@gmail.com>"]
+description = "Replace text file in bulk"
+readme = "README.md"
+repository = "https://github.com/ahmadrosid/rep-cli"
+license = "MIT OR Apache-2.0"
+keywords = ["cli", "productivity"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
