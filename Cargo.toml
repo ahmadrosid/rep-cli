@@ -1,5 +1,5 @@
 [package]
-name = "rep"
+name = "rep-cli"
 version = "0.1.0"
 edition = "2021"
 authors = ["Ahmad Rosid <alahmadrosid@gmail.com>"]
@@ -14,3 +14,7 @@ keywords = ["cli", "productivity"]
 [dependencies]
 ignore = "0.4.18"
 structopt = "0.3.26"
+
+[[bin]]
+name = "rep"
+path = "src/main.rs"
