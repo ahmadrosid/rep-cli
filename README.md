@@ -13,9 +13,9 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
+    -i, --input <input>    File path to replace
     -e, --ext <ext>        File extensions use * to accept all ext [default: *]
     -f, --from <from>      Original string
-    -i, --input <input>    File path to replace
     -t, --to <to>          Replaced string
 ```
 
