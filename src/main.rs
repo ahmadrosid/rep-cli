@@ -45,29 +45,26 @@ fn main() {
                 perform_replace(dir.path(), &opt.from, &opt.to);
             }
         }
-    } else {
-        if &opt.ext == "*"
-            || path
-                .extension()
-                .unwrap_or_default()
-                .to_string_lossy()
-                .contains(&opt.ext)
-        {
-            perform_replace(path, &opt.from, &opt.to);
-        }
+    } else if opt.ext == "*"
+        || path
+            .extension()
+            .unwrap_or_default()
+            .to_string_lossy()
+            .contains(&opt.ext)
+    {
+        perform_replace(path, &opt.from, &opt.to);
     }
 }
 
 fn perform_replace(path: &Path, from: &str, to: &str) {
     println!("Replacing file {}", path.display());
-    let source =
-        fs::read_to_string(&path).expect(&format!("Can not read file {}", &path.display()));
-    let result = source.replace(from, to).to_string();
+    let source = fs::read_to_string(&path)
+        .unwrap_or_else(|_| panic!("Can not read file {}", &path.display()));
     let mut f = fs::OpenOptions::new()
         .write(true)
         .truncate(true)
         .open(&path)
         .expect("Failed to rewrite file");
-    f.write_all(result.as_bytes()).unwrap();
+    f.write_all(source.replace(from, to).as_bytes()).unwrap();
     f.flush().unwrap();
 }
