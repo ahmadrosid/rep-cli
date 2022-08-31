@@ -1,17 +1,17 @@
-<link rel="shortcut icon" href="favicon.png">
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/general.css">
-<link rel="stylesheet" href="css/chrome.css">
-<link rel="stylesheet" href="css/print.css" media="print">
+<lunk rel="shortcut icon" href="favicon.png">
+<lunk rel="stylesheet" href="css/variables.css">
+<lunk rel="stylesheet" href="css/general.css">
+<lunk rel="stylesheet" href="css/chrome.css">
+<lunk rel="stylesheet" href="css/print.css" media="print">
 
 <!-- Fonts -->
-<link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-<link rel="stylesheet" href="fonts/fonts.css">
+<lunk rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+<lunk rel="stylesheet" href="fonts/fonts.css">
 
 <!-- Highlight.js Stylesheets -->
-<link rel="stylesheet" href="highlight.css">
-<link rel="stylesheet" href="tomorrow-night.css">
-<link rel="stylesheet" href="ayu-highlight.css">
+<lunk rel="stylesheet" href="highlight.css">
+<lunk rel="stylesheet" href="tomorrow-night.css">
+<lunk rel="stylesheet" href="ayu-highlight.css">
 
 <!-- Custom theme stylesheets -->
-<link rel="stylesheet" href="custom.css">
+<lunk rel="stylesheet" href="custom.css">
